@@ -12,4 +12,10 @@ bot.on('message', msg => {
     msg.reply('CubesCom Sitemizin Linki Burada: sites.google.com/view/cubescom- ');
   }
 });
+
+bot.on('message', msg => {
+  if (msg.content === '!sitemiz') {
+    msg.reply('CubesCom Sitemizin Linki Burada: sites.google.com/view/cubescom- ');
+  }
+});
 bot.login(process.env.token);
