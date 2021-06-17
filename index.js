@@ -1,22 +1,20 @@
 const Discord = require ("discord.js")
-const client = new Discord.Client();
+const bot = new Discord.Client();
 
-client.on('ready', () => {
-  client.user.setActivity("Cubescom Özel | George O' Land")
+bot.on('ready', () => {
+  bot.user.setActivity("Cubescom Özel | George O' Land")
   type: "PLAYING"
-  console.log(`${client.user.tag} olarak giriş yapıldı!`);
+  console.log(`${bot.user.tag} olarak giriş yapıldı!`);
 });
 
-client.on('message', msg => {
+bot.on('message', msg => {
   if (msg.content === '!sitemiz') {
     msg.reply('CubesCom Sitemizin Linki Burada: sites.google.com/view/cubescom- ');
   }
 });
-
-client.on('message', msg => {
-    if (msg.content === '!sitemiz') {
-    msg.reply('message.author.displayAvatarURL());
+bot.on('message', message => {
+  if (message.content === '!my-pfp') {
+    message.channel.send(message.author.displayAvatarURL());
   }
 });
-
-client.login(process.env.token);
+bot.login(process.env.token);
