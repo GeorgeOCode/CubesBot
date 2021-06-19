@@ -8,12 +8,17 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === '!sitemiz') {
+  if (msg.content === '-sitemiz') {
     msg.channel.send('sites.google.com/view/cubescom-');
   }
 });
+client.on('message', msg => {
+  if (msg.content === '-yardım') {
+    msg.channel.send('Bu Botta -sitemiz -pf -başlat ');
+  }
+});
 client.on('message', message => {
-  if (message.content === '!my-pfp') {
+  if (message.content === '-pf') {
     message.channel.send(message.author.displayAvatarURL());
   }
 });
