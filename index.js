@@ -152,4 +152,64 @@ client.on("message", (msg) => {
     msg.reply("Boşverdin ve uyudun!")
   }
 })
+  client.on("message", msg => {
+    if (msg.content.toLowerCase() === "!heheboi") {
+      msg.channel.send(
+        "https://tenor.com/view/ainsley-satisfaction-hehe-boy-laughing-gif-12120637"
+      );
+    }
+  });
+  client.on("message", msg => {
+    if (msg.content.toLowerCase() === "!fun") {
+      msg.channel.send("I’d like to start dieting but I’ve got too much on my plate.");
+    }
+  });
+  client.on("message", msg => {
+    if (msg.content.toLowerCase() === "bb") {
+      msg.channel.send("Hey! .Bye Bye!");
+    }
+  });
+  client.on("message", msg => {
+    if (msg.content.toLowerCase() === "!dans") {
+      msg.channel.send("https://tenor.com/view/pqueen-mugemin-gif-18747629");
+    }
+  });
+  client.on("message", msg => {
+    if (msg.content.toLowerCase() === "!eğlence") {
+      msg.channel.send("https://tenor.com/view/doge-dogeondoge-meme-gif-5586037");
+    }
+  });
+  client.on("message", msg => {
+    if (msg.content.toLowerCase() === "!eğlence-1") {
+      msg.channel.send("https://tenor.com/view/pqueen-cat-cute-gif-16074929");
+    }
+  });
+  client.on("message", msg => {
+    if (msg.content.toLowerCase() === "!eğlence-2") {
+      msg.channel.send(
+        "I broke up with my ex girl. Here is her number.   Sike! That's the wrong number!   "
+      );
+    }
+  });
+  client.on("message", msg => {
+    if (msg.content.toLowerCase() === "!eğlence-3") {
+      msg.channel.send(
+        "https://tenor.com/view/baby-yoda-baby-yoda-happy-laughing-smile-happy-gif-16061896"
+      );
+    }
+  });
+  client.on("message", msg => {
+    if (msg.content.toLowerCase() === "!kimsin") {
+      msg.channel.send(
+        "GeorgeS#1923 Tarafından Yapılmış bir eğlence botuyum!"
+      );
+    }
+  });
+  client.on("message", msg => {
+    if (msg.content.toLowerCase() === "!sarılalım") {
+      msg.channel.send(
+        "https://tenor.com/view/baby-yoda-hug-me-pick-me-up-please-hug-gif-19355158"
+      );
+    }
+  });
 client.login(process.env.token);
