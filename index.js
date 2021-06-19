@@ -1,5 +1,5 @@
-const Discord = require ("discord.js")
-const client = new Discord.Client();
+const discord = require("discord.js");
+const client = new discord.Client();
 
 client.on('ready', () => {
   client.user.setActivity("Cubescom Özel | George O' Land")
@@ -24,7 +24,7 @@ client.on('guildMemberAdd', member => {
 });
 client.on("message", (msg) => {
   if (msg.content === "-başlat") {
-    msg.reply("Normal Bir Kişiliğin olduğu için günlük bir aktivite yapmak istiyorsun! Ne Yapacaksın? -volta-at  -kömürlükte-koşuştur")
+    msg.channel.send("https://imgur.com/awank9Z.png")
   }
 })
 client.on("message", (msg) => {
