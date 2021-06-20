@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === '-sitemiz') {
-    msg.channel.send('sites.google.com/view/cubescom-');
+    msg.channel.send(`<@${msg.author.id}> ziyaret edersen sevinirim :D \nhttps://sites.google.com/view/cubescom-`);
   }
 });
 client.on('message', msg => {
@@ -164,7 +164,7 @@ client.on("message", msg => {
   });
   client.on("message", msg => {
     if (msg.content.toLowerCase() === "-dans") {
-      msg.channel.send("https://tenor.com/view/pqueen-mugemin-gif-18747629");
+      msg.channel.send("https://tenor.com/view/hacinin-salgami-hacininsalgami-dans-haci-gif-14576247")
     }
   });
   client.on("message", msg => {
