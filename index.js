@@ -14,7 +14,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
   if (msg.content === '-yardım') {
-    msg.reply('*Tüm Komutlar:* \n-sitemiz = **CubesCom Sitemizin Linkini Gönderir** \n-pf = **Avatarınızı Gösterir** \n-başlat = **RPG Oyununa Başlar!** \n-heheboi = Hehe Boiii \n-dans = **Hadi Dans!** \n');
+    msg.reply('\n***Tüm Komutlar:*** \n-sitemiz = **CubesCom Sitemizin Linkini Gönderir** \n**-pf** = Avatarınızı Gösterir \n**-başlat = RPG Oyununa Başlar! \n-eğlence, -eğlence-1, -eğlence-2 ve -eğlence-3 = **Eğlenme Garantili 4 Komut**\n-dans = **Hadi Dans!** \n-sarılalım = **Hadi Sarılalım!**');
   }
 });
 client.on('message', message => {
@@ -157,14 +157,7 @@ client.on("message", (msg) => {
     msg.reply("Boşverdin ve uyudun!")
   }
 })
-  client.on("message", msg => {
-    if (msg.content.toLowerCase() === "-heheboi") {
-      msg.channel.send(
-        "https://tenor.com/view/ainsley-satisfaction-hehe-boy-laughing-gif-12120637"
-      );
-    }
-  });  
-    client.on("message", msg => {
+client.on("message", msg => {
     if (msg.content.toLowerCase() === "bb") {
       msg.channel.send("Hey! .Bye Bye!");
     }
@@ -198,14 +191,7 @@ client.on("message", (msg) => {
       );
     }
   });
-  client.on("message", msg => {
-    if (msg.content.toLowerCase() === "-kimsin") {
-      msg.channel.send(
-        "GeorgeSツ Tarafından Yapılmış bir eğlence botuyum!"
-      );
-    }
-  });
-  client.on("message", msg => {
+    client.on("message", msg => {
     if (msg.content.toLowerCase() === "-sarılalım") {
       msg.channel.send(
         "https://gph.is/g/amM2krP"
