@@ -14,7 +14,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
   if (msg.content === '-yardım') {
-    msg.channel.send('Bu Botta -sitemiz -pf -başlat ');
+    msg.reply('*Tüm Komutlar:* \n-sitemiz = **CubesCom Sitemizin Linkini Gönderir** \n-pf = **Avatarınızı Gösterir** \n-başlat = **RPG Oyununa Başlar!** \n-heheboi = Hehe Boiii \n-dans = **Hadi Dans!** \n');
   }
 });
 client.on('message', message => {
