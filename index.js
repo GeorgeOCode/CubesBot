@@ -174,13 +174,13 @@ client.on("message", msg => {
   });
   client.on("message", msg => {
     if (msg.content.toLowerCase() === "-eğlence-1") {
-      msg.channel.send("https://tenor.com/view/pqueen-cat-cute-gif-16074929");
+      msg.channel.send("https://giphy.com/gifs/afv-funny-fail-lol-26tP3M3i03hoIYL6M");
     }
   });
   client.on("message", msg => {
     if (msg.content.toLowerCase() === "-eğlence-2") {
       msg.channel.send(
-        "İngilizler kendi kıllarına ne der?\nMicheal"
+        `<@${msg.author.id}> İngilizler kendi kıllarına ne der?\n\n\n\n **Cevap** = Micheal :D`
       );
     }
   });
