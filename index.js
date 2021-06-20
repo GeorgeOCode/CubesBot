@@ -14,7 +14,7 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
   if (msg.content === '-yardım') {
-    msg.reply('\n***Tüm Komutlar:*** \n-sitemiz = **CubesCom Sitemizin Linkini Gönderir** \n**-pf** = Avatarınızı Gösterir \n**-başlat = RPG Oyununa Başlar! \n-eğlence, -eğlence-1, -eğlence-2 ve -eğlence-3 = **Eğlenme Garantili 4 Komut**\n-dans = **Hadi Dans!** \n-sarılalım = **Hadi Sarılalım!**');
+    msg.channel.send(`\n***Tüm Komutlar:*** \n**-sitemiz** = CubesCom Sitemizin Linkini Gönderir \n**-pf** = Avatarınızı Gösterir \n**-başlat** = RPG Oyununa Başlar! \n**-eğlence, -eğlence-1, -eğlence-2 ve -eğlence-3** = Eğlenme Garantili 4 Komut\n**-dans** = Hadi Dans! \n-**sarılalım** = Hadi Sarılalım! \n<@${msg.author.id}> işte komutlar bu kadardı!`);
   }
 });
 client.on('message', message => {
