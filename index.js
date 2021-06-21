@@ -2,7 +2,7 @@ const discord = require("discord.js");
 const client = new discord.Client();
 
 client.on('ready', () => {
-  client.user.setActivity("-yardım | George O' Land ve CubesCom")
+  client.user.setActivity("-yardım | George O' Land Bot Yapım Botu!")
   type: "PLAYING"
   console.log(`${client.user.tag} olarak giriş yapıldı!`);
 });
